@@ -1,0 +1,167 @@
+/* Main cart container */
+.cart-remove {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+
+ 
+}
+
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+ 
+ 
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.item-price {
+  margin: 4px 0;
+  color: #555;
+  font-weight: 500;
+}
+
+.item-discount {
+  color: green;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+
+.remove-button {
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #d9363e;
+}
+
+.summary-container {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+
+ 
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.total-row {
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+
+.place-order-button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 600px) {
+  
+  .item-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  
+  .remove-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  
+  .summary-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+ 
+  .summary-container {
+    padding: 16px;
+  }
+
+  .item-name {
+    font-size: 1rem;
+  }
+
+  .item-price,
+  .item-discount,
+  .summary-row {
+    font-size: 0.9rem;
+  }
+
+  .place-order-button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}
+}

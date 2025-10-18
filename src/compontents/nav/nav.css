@@ -1,0 +1,42 @@
+.nav-bar{
+    margin-top: 10px;
+    background-color: rgb(127, 255, 144);
+    display:flex;
+
+    gap:30px;
+    padding: 10px 20px;
+    width:100%
+   
+}
+.nav-bar :hover{
+
+    background-color: rgb(27, 116, 116);
+    
+    color:aliceblue;
+    border-radius: 5px;
+}
+.nav-but{
+    border:none;
+    background-color: rgb(127, 255, 144);
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column; 
+    gap: 15px;              
+    padding: 10px;           
+ }
+
+  .nav-but {
+    width: 100%;             
+    padding: 12px 0;        
+    font-size: 1.1rem;      
+  }
+  .nav-but{
+    border:none;
+    background-color: rgb(127, 255, 144);
+}
+}
+
+    
+       
